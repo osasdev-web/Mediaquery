@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f9f9f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    max-width: 960px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    flex: 1;
+    padding: 40px 30px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card .icon img {
+    width: 60px;
+    height: auto;
+    margin-bottom: 25px;
+    opacity: 1.9;
+}
+
+.card h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.card p {
+    flex-grow: 1;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.card button {
+    background-color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 10px;
+    cursor: pointer;
+    color: black;
+    align-self: start;
+}
+
+.card button:hover {
+    background-color: #eeeeee;
+}
+
+.sedan {
+    background-color: #e68a2e;
+}
+
+.suv {
+    background-color: #006b6b;
+}
+
+.luxury {
+    background-color: #004040;
+}
+
+/* media query */
+
+@media (max-width: 400px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .card {
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    .card button {
+        align-self: center;
+    }
+
+    .card .icon img {
+        margin-bottom: 20px;
+    }
+
+    .card p {
+        text-align: left;
+    }
+}
